@@ -50,8 +50,10 @@
     <Compile Include="Interfaces\IBearingChokesData.cs" />
     <Compile Include="Models\BearingChokes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\InMemoryBearingChokesData.cs" />
-    <Compile Include="Services\OracleDatabaseBearingChokesData.cs" />
+    <Compile Include="Repository\BearingChokesRepository.cs" />
+    <Compile Include="Repository\OdpRepository.cs" />
+    <Compile Include="Services\BearingChokesDataService.cs" />
+    <Compile Include="Services\InMemoryBearingChokesDataService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
