@@ -1,9 +1,10 @@
 ﻿using DAL.Models;
+using System.Collections.Generic;
 
 namespace DAL.Interfaces
 {
     public interface IBearingChokesData
     {
-        BearingChokes GetInstalledBearingChokes();
+        IEnumerable<BearingChokes> GetInstalledBearingChokes();
     }
 }

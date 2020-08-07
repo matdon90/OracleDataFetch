@@ -1,4 +1,5 @@
 ﻿using DAL.Interfaces;
+using System.Linq;
 using System.Web.Http;
 using WebAPI.Infrastructure.Mapper;
 using WebAPI.ViewModels;
@@ -28,7 +29,7 @@ namespace WebAPI.Controllers
         [HttpGet]
         public BearingChokesViewModel Get()
         {
-            return _context.GetInstalledBearingChokes().ToViewModel();
+            return _context.GetInstalledBearingChokes().First().ToViewModel();
         }
     }
 }

@@ -1,13 +1,14 @@
 ﻿using DAL.Interfaces;
 using DAL.Models;
+using System.Collections.Generic;
 
 namespace DAL.Services
 {
-    public class InMemoryBearingChokesData : IBearingChokesData
+    public class InMemoryBearingChokesDataService : IBearingChokesData
     {
         BearingChokes installedBearingChokes;
 
-        public InMemoryBearingChokesData()
+        public InMemoryBearingChokesDataService()
         {
             installedBearingChokes = new BearingChokes()
             {
@@ -30,9 +31,9 @@ namespace DAL.Services
             };
         }
 
-        public BearingChokes GetInstalledBearingChokes()
+        public IEnumerable<BearingChokes> GetInstalledBearingChokes()
         {
-            return installedBearingChokes;
+            return new List<BearingChokes>() { installedBearingChokes };
         }
     }
 }
