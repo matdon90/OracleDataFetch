@@ -7,8 +7,9 @@ namespace DAL.Services
 {
     public class BearingChokesDataService : IBearingChokesData
     {
-        private string connectionString = "DATA SOURCE=192.168.0.107:1521/OracleDB;USER ID=SCOTT;PASSWORD=Start123";
-        private string tableName = "BearingChokesTable";
+        private readonly string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["OracleDb"].ConnectionString;
+        private readonly string tableName = System.Configuration.ConfigurationManager.AppSettings["BearingChokesTableName"].ToString();
+
         private readonly BearingChokesRepository _repository;
         public BearingChokesDataService()
         {
