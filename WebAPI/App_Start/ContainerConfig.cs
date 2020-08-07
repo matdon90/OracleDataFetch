@@ -16,7 +16,7 @@ namespace WebAPI.App_Start
             var builder = new ContainerBuilder();
 
             builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
-            builder.RegisterType<InMemoryBearingChokesData>().As<IBearingChokesData>().InstancePerRequest();
+            builder.RegisterType<OracleDatabaseBearingChokesData>().As<IBearingChokesData>().InstancePerRequest();
 
             var container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
