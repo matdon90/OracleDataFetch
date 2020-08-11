@@ -33,7 +33,7 @@
 ## About The Project
 
 Oracle Data Fetch is a small Web API 2 service for fetching data from old, obsolate Oracle 10g database where cannot be used EF.
-In project there is implemented connection to database with use of ODP.NET. To encapsulate the logic required to access data source the Repository pattern is use.
+In project there is implemented connection to database with use of ODP.NET. To encapsulate the logic required to access data source the Repository pattern is used.
 
 
 <!-- USED TECHNOLOGIES -->
