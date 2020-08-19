@@ -13,9 +13,9 @@ namespace WebAPI.Infrastructure.Mapper
         {
             mapperConfiguration = new MapperConfiguration(cfg =>
             {
-                #region BearingChokes
-                cfg.CreateMap<BearingChokes, BearingChokesViewModel>();
-                cfg.CreateMap<BearingChokesViewModel, BearingChokes>();
+                #region Cushion
+                cfg.CreateMap<Cushion, CushionViewModel>();
+                cfg.CreateMap<CushionViewModel, Cushion>();
                 #endregion
             });
 
