@@ -15,10 +15,10 @@ namespace WebAPI.Infrastructure.Mapper
             return AutoMapperConfiguration.Mapper.Map<TSource, TDestination>(source, destination);
         }
 
-        #region BearingChokes
-        public static BearingChokesViewModel ToViewModel(this BearingChokes entity)
+        #region Cushion
+        public static CushionViewModel ToViewModel(this Cushion entity)
         {
-            return entity.MapTo<BearingChokes, BearingChokesViewModel>();
+            return entity.MapTo<Cushion, CushionViewModel>();
         }
         #endregion
     }
