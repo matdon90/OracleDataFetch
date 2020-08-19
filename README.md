@@ -67,10 +67,10 @@ To get a local copy up and running follow these simple steps:
     <add key="yourTableNameId" value="yourTableName"/>
   </appSettings>
 ```
-* To have it working with your model you need to create appropriate model, view model, controller, service and repository basing on my `BearingChokes` model.
+* To have it working with your model you need to create appropriate model, view model, controller, service and repository basing on my `Cushion` model.
 * Run application
 * To access SwaggerUI fire up your browser and open url `https://localhost:44351/swagger`
-* To use other programs i.e. POSTMAN use url `https://localhost:44351/api/[PrefixOfYourController]`. In my case `https://localhost:44351/api/bearingchokes`
+* To use other programs i.e. POSTMAN use url `https://localhost:44351/api/[PrefixOfYourController]`. In my case for list of all items use `https://localhost:44351/api/cushions` and for details for example `https://localhost:44351/api/cushions/1/O`
 * Enjoy ;-)
 
 
