@@ -48,13 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\IBearingChokesData.cs" />
-    <Compile Include="Models\BearingChokes.cs" />
+    <Compile Include="Interfaces\ICushionsData.cs" />
+    <Compile Include="Models\Cushion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\BearingChokesRepository.cs" />
+    <Compile Include="Repository\CushionRepository.cs" />
     <Compile Include="Repository\OdpRepository.cs" />
-    <Compile Include="Services\BearingChokesDataService.cs" />
-    <Compile Include="Services\InMemoryBearingChokesDataService.cs" />
+    <Compile Include="Services\CushionsDataService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
