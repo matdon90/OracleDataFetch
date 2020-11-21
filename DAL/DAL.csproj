@@ -49,13 +49,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\ICushionsData.cs" />
-    <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Models\Cushion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\CushionRepository.cs" />
     <Compile Include="Repository\OdpRepository.cs" />
     <Compile Include="Services\CushionsDataService.cs" />
-    <Compile Include="UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
